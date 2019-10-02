@@ -21,5 +21,5 @@ This will create a swif workflow named `clasdis`, add N jobs to it and run it.
 
 Each job consist of 10000 events. The result is a hipo file named cooked_n.hipo, n from 0 to N.
 
-!!!Change outdir in the header of the python script.!!!!
+**!!!Change outdir in the header of the python script.!!!!**
 
