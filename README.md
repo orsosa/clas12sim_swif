@@ -1,3 +1,6 @@
+# Intro
+python script for running simulations jobs on jlab farm.
+
 # Requirement.
 - Load clas12 packages in environment.
   - e.g. add to your ~/.cshrc :
