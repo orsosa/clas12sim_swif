@@ -105,6 +105,8 @@ def main():
         add_job(WF,job_i)
         while (total - succ - fail) > MAXJOBS:
             sleep(10)
+            act,pend,succ,fail,total = check_wf()
+            
         job_i +=1
         fout = open(curr_status_file,"w")
         fout.write("Bunch / job_i\n")
