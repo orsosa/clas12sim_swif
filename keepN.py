@@ -14,7 +14,7 @@ app="/home/osoto/clasdis-nocernlib/clasdis"
 script="run_chain.csh"
 gcard="/group/clas12/gemc/gcards/rga-fall2018.gcard"
 WF="clas12sim_cont"
-curr_status_file = "/home/osoto/sim_status.txt"
+curr_status_file = "/home/osoto/clas12sim_swif/sim_status.txt"
 MAXJOBS = 100
 DEBUG=False
 #################################################
@@ -88,9 +88,8 @@ def main():
     subprocess.call(cmd,shell=True)
 
     while True:
-        if job_i==500:
+        if job_i%500==0:
             bunch += 1
-            job_i = 0
             outdir = outdir_temp + "_" + str(bunch)
             cmd = "mkdir -p " + outdir
             print cmd

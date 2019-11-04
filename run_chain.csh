@@ -1,5 +1,4 @@
-#!/bin/csh -f
-source ~/.cshrc
+#!/bin/csh
 mkdir eventfiles
 ./clasdis --trig 10000 --nmax 10000 --zpos -3.0 --zwidth 5 --raster 0 --w 3.92 20 --q 0.85 15
 cat eventfiles/*.dat > lundFile.dat
